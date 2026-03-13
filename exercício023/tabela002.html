@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+           font-family: Arial, Helvetica, sans-serif; 
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        thead {
+            background-color: darkslategray;
+            color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: darkslategray;
+        }
+
+        table {
+            position: relative;
+            border-collapse: collapse;
+            width: 500px;
+        }
+
+        td, th {
+            border: 2px solid black;
+            padding: 10px;
+        }
+        
+        tbody > tr:nth-child(odd) { /*Assim se faz um efeito zebrado, usando a pseudo class (odd é impar, e even é par*/
+            background-color: rgb(208, 208, 175);
+        }
+
+        .num {
+            text-align: right;
+        }
+
+        tfoot {
+            background-color: darkgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabelas grandes</h1>
+    <!--
+    ANATOMIA PARA TABELAS GRANDES
+    CAPTION
+    TABLE 
+      THEAD
+        TR, TD ,TH
+      TBODY
+        TR,TD,TH
+      TFOOT
+        TR, TD, TH
+    -->
+        <table>
+            <Caption>Populações das unidades federativas</Caption>
+            <thead>
+                <tr>
+                    <th scope="col">Estado</th>
+                    <th scope="col" style="width: 100px;">População</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>São Paulo</td>
+                    <td class="num">45 919 049</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td class="num">21 168 791</td>
+                </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td class="num">17 264 943</td>
+                </tr>
+                <tr>
+                    <td>Bhaia</td>
+                    <td class="num">14 870 907</td>
+                </tr>
+                <tr>
+                    <td> Paraná	</td>
+                    <td class="num">11 890 517</td>
+                </tr>
+                <tr>
+                    <td> Rio Grande do Sul</td>
+                    <td class="num">11 233 263	</td>
+                </tr>
+                <tr>
+                    <td> Pernambuco</td>
+                    <td class="num">9 562 007</td>
+                </tr>
+                 <tr>
+                    <td> Ceará</td>
+                    <td class="num">9 268 836</td>
+                </tr>
+                 <tr>
+                    <td> Pará</td>
+                    <td class="num">8 711 196</td>
+                </tr>
+                 <tr>
+                    <td> Santa Catarina</td>
+                    <td class="num">8 187 029	</td>
+                </tr>
+                 <tr>
+                    <td> Goiás</td>
+                    <td class="num">7 423 629	</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <th>Total de habitantes</th>
+                    <td class="num"><strong>213 421 037</strong></td>
+                </tr>
+            </tfoot>
+        </table>
+       
+</body>
+</html>
