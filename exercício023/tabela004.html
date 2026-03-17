@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela04</title>
+    <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: center;
+            }
+
+            .negrito {
+                font-weight: bold;
+            }
+            
+            caption {
+                padding: 10px;
+                font-weight: bold;
+                font-size: 1.3em;
+            }
+
+            #gênero {
+                background-color: gray;
+            }
+
+            table {
+                width: 700px;
+                border-collapse: collapse;
+                margin: auto;
+            }
+
+            th, td {
+                border: 3px solid black;
+                text-align: center;
+                padding: 5px 20px;
+            }
+        </style>
+</head>
+<body>
+        <h1>Exercícios de tabelas</h1>
+        <hr>
+        <table>
+            <caption>
+
+                filmeis favoritos
+            </caption>
+            <tr id="aqua" class="negrito">
+                <th scope="col">Grupos</th>
+                <th scope="col">Nomes</th>
+                <th scope="colgroup" colspan="3">Filmeis</th>
+            </tr>
+            <tr>
+                <th scope="rowgroup" id="gênero" rowspan="4" class="negrito">Mulheres</th>
+                <td>Ana</td>
+                <td>Titanik</td>
+                <td>Frozen</td>
+                <td>Barbier</td>
+            </tr>
+            <tr>
+                <td>Paula</td>
+                <td>Branca de Neve</td>
+                <td>As Branquelas</td>
+                <td>O Exterminador do Futuro</td>
+            </tr>
+            <tr>
+                <td>Patrícia</td>
+                <td>A Casa de Cera</td>
+                <td>King Kong</td>
+                <td>Branca de Neve</td>
+                
+            </tr>
+            <tr>
+                <td>Júlia</td>
+                <td>Raponzel</td>
+                <td>Alice no País das Maravilhas</td>
+                <td>Peter Pan</td>
+                
+            </tr>
+            <tr>
+                <th scope="rowgroup" id="gênero" rowspan="4" class="negrito">Homens</th>
+                <td>Caio</td>
+                <td>Os Vigadores</td>
+                <td>Homem de Ferro</td>
+                <td>Homen Aranha</td>
+            </tr>
+            <tr>
+                <td>Pedro</td>
+                <td>Velozes e Furiósos</td>
+                <td>Capitão América</td>
+                <td>Esquadrão Suicida</td>
+            </tr>
+            <tr>
+                <td>Lucas</td>
+                <td>Hulk</td>
+                <td>007</td>
+                <td>As aventuras de Tintin</td>
+                
+            </tr>
+            <tr>
+                <td>Erik</td>
+                <td>Piratas do Caríbe</td>
+                <td>Os Vigadores</td>
+                <td>007</td>
+                
+            </tr>
+        </table>
+    </body>
+    </html>
+</body>
+</html>
